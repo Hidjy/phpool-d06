@@ -1,0 +1,25 @@
+
+<- Vertex ---------------------------------------------------------------------
+The Vertex class handle 3D colored vector.
+
+An instance can be contructed from coordinates:
+new Vertex( array(	'x' => 1.0,
+					'y' => 1.0,
+					'z' => 1.0,
+					'w' => 1.0,
+					'color' => new Color ) );
+
+The class provides the following access methods :
+
+Vertex    setX(double $x);
+Vertex    setY(double $y);
+Vertex    setZ(double $z);
+Vertex    setW(double $w);
+Vertex    setColor(Color $color);
+
+Vertex    getX();
+Vertex    getY();
+Vertex    getZ();
+Vertex    getW();
+Vertex    getColor();
+--------------------------------------------------------------------- Vertex ->
