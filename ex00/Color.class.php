@@ -45,19 +45,19 @@ class Color
 		return('Color( red: '.str_pad($this->red, 3, ' ', STR_PAD_LEFT).', green: '.str_pad($this->green, 3, ' ', STR_PAD_LEFT).', blue: '.str_pad($this->blue, 3, ' ', STR_PAD_LEFT).' )');
 	}
 
-	function add($color)
+	function add(Color $color)
 	{
 		return (new Color(array('red' => ($this->red + $color->red), 'green' => ($this->green + $color->green), 'blue' => ($this->blue + $color->blue))));
 	}
 
-	function sub($color)
+	function sub(Color $color)
 	{
 		return (new Color(array('red' => ($this->red - $color->red), 'green' => ($this->green - $color->green), 'blue' => ($this->blue - $color->blue))));
 	}
 
-	function mult($color)
+	function mult($nb)
 	{
-		return (new Color(array('red' => ($this->red * $color), 'green' => ($this->green * $color), 'blue' => ($this->blue * $color))));
+		return (new Color(array('red' => ($this->red * $nb), 'green' => ($this->green * $nb), 'blue' => ($this->blue * $nb))));
 	}
 }
 ?>
