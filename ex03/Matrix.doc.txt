@@ -1,4 +1,27 @@
 
 <- Matrix ----------------------------------------------------------------------
-Your documentation here.
+The Vector class handle 4x4 tranformation matrices.
+
+An instance can be contructed from presets:
+new Vertex( array(	'preset' => Matrix::PRESET ) );
+
+The class provides the following presets :
+CUSTOM
+IDENTITY
+SCALE
+RX
+RY
+RZ
+TRANSLATION
+PROJECTION
+
+The class provides the following methods :
+
+Vector    getVtcX();
+Vector    getVtcY();
+Vector    getVtcZ();
+Vertex    getVtxO();
+
+Matrix    mult(Matrix $rhs);
+Vertex    transformVertex(Vertex $vtx);
 ---------------------------------------------------------------------- Matrix ->

@@ -1,6 +1,6 @@
 
 <- Vertex ---------------------------------------------------------------------
-The Vertex class handle 3D colored vector.
+The Vertex class handle 3D colored vectices.
 
 An instance can be contructed from coordinates:
 new Vertex( array(	'x' => 1.0,

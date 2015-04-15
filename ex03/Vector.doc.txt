@@ -1,4 +1,24 @@
 
 <- Vector ----------------------------------------------------------------------
-Your documentation here.
+The Vector class handle 3D vectors.
+
+An instance can be contructed from vertices:
+new Vector( array(	'dest' => new Vertex(), 'orig' => new Vertex() ) );
+
+The class provides the following methods :
+
+Vertex    getX();
+Vertex    getY();
+Vertex    getZ();
+Vertex    getW();
+
+float     magnitude();
+Vertex    normalize();
+Vertex    add(Vector $rhs);
+Vertex    sub(Vector $rhs);
+Vertex    opposite();
+Vertex    scalarProduct(float $k);
+float     dotProduct(Vector $rhs);
+float     cos(Vector $rhs);
+Vertex    crossProduct(Vector $rhs);
 ---------------------------------------------------------------------- Vector ->
